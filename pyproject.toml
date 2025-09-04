@@ -5,21 +5,25 @@ description = "API каталога исполнителей с альбомам
 authors = [
     "Никита Шидогубов",
 ]
-package-mode = false
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.13"
 python-dotenv = "^1.1.1"
 djangorestframework = "^3.16.1"
 psycopg2-binary = "^2.9.10"
 gunicorn = "^23.0.0"
 drf-spectacular = "^0.28.0"
 django-filter = "^25.1"
+faker = "^37.6.0"
+coverage = "^7.10.6"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^4.3.0"
 black = "^25.1.0"
 ruff = "^0.12.11"
+
+
+[tool.poetry.group.test.dependencies]
 
 [tool.ruff]
 line-length = 119
